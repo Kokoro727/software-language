@@ -1,7 +1,6 @@
 <?php
 
 //Developer: Fouad Taissate
-require './more.php';
 
 
 $Fouad = [
@@ -30,23 +29,37 @@ $group = [
 
 ];
 
-echo "<div>
-        <a href='./Fouad.php'>Fouad</a>
-    </div>
-    ";
+
+// Zorgt ervoor dat van elke array in de $group array een link komt
+foreach ($group as $person) {
+    echo '<a href="more.php?name=' . $person[0] . '">View ' . $person[0] . "'s info</a><br>";
+};
 
 
 
-echo "<div>
-        <a href='./Niloyan.php'>Niloyan</a>
-    </div>
-    ";
 
 
-echo "<div>
-        <a href='./Sam.php'>Sam</a>
-    </div>
-    ";
+
+
+
+
+// echo "<div>
+//         <a href='./Fouad.php'>Fouad</a>
+//     </div>
+//     ";
+
+
+
+// echo "<div>
+//         <a href='./Niloyan.php'>Niloyan</a>
+//     </div>
+//     ";
+
+
+// echo "<div>
+//         <a href='./Sam.php'>Sam</a>
+//     </div>
+//     ";
 
 
 
